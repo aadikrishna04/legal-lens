@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalLens</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="nav-cont">
+      <header class="header">
+        <div class="main-cont">
+          <div class="row align-items-center justify-content-between">
+            <div class="logo">
+              <a href="#">LegalLens</a>
+            </div>
+            <input type="checkbox" id="nav-check" />
+            <label for="nav-check" class="nav-toggler">
+              <span></span>
+            </label>
+            <nav class="nav">
+              <ul>
+                <li><a href="#" class="active">How It Works</a></li>
+                <li><a href="#" class="active">Features</a></li>
+                <li><a href="#" class="active">Pricing</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <section class="m-16">
+      <div
+        class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24"
+      >
+        <div class="flex w-full mx-auto text-left">
+          <div class="relative inline-flex items-center mx-auto align-middle">
+            <div class="text-center">
+              <h1
+                class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+              >
+                Contract Analysis <strong class="redefined">Redefined</strong>
+              </h1>
+              <p class="mt-6 mb-6 text-lg leading-8 text-gray-600">
+                With LegalLens, navigating complex contracts becomes effortless.
+                Designed to simplify the complexities of agreements, LegalLens
+                provides a seamless platform to upload your contracts and gain
+                valuable insights. Experience the power of transparency as
+                unfair terms are highlighted in red, and potential concerns in
+                yellow, helping you make informed decisions. With LegalLens, you
+                can export a detailed PDF with comprehensive explanations for
+                flagged clauses, putting you in control of your contractual
+                obligations
+              </p>
+              <form action="/waitlist" method="post">
+                <div
+                  class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6"
+                >
+                  <div class="mt-3 rounded-lg sm:mt-1 mr-3">
+                    <input
+                      type="email"
+                      id="input-label"
+                      class="py-3 px-4 block w-60 border-gray-200 border-2 rounded-md text-sm focus:outline-none focus:ring-blue-500 dark:border-gray-200 dark:text-gray-400"
+                      placeholder="you@site.com"
+                    />
+                  </div>
+                  <div class="mt-3 rounded-lg sm:mt-0">
+                    <button
+                      class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-500 lg:px-10 rounded-xl hover:bg-blue-600 focus:outline-none"
+                    >
+                      Join the Waitlist!
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <section id="intro">
+          <div
+            class="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl"
+          >
+            <img
+              class="object-cover object-center w-full rounded-xl"
+              alt="hero"
+              src="https://cdn.dribbble.com/userupload/6546655/file/original-978d37ded8bb51d00df3e96e39121523.jpg?resize=2048x1536&vertical=center"
+            />
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font second-section">
+      <div class="max-w-screen-md mb-4 lg:mb-8 ml-auto mr-auto">
+        <h2
+          class="how-it-works-title mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-700"
+        >
+          Unveiling Contract Transparency
+        </h2>
+        <p class="text-gray-500 sm:text-xl dark:text-gray-600">
+          How LegalLens works under the hood
+        </p>
+      </div>
+      <div class="container px-5 pt-8 pb-24 mx-auto">
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div
+            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-400 text-blue-500 flex-shrink-0"
+          >
+            <svg
+              fill="#000000"
+              width="75px"
+              height="75px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M20,6.52897986 L20,19.5010024 C20,20.8817143 18.8807119,22.0010024 17.5,22.0010024 L6.5,22.0010024 C5.11928813,22.0010024 4,20.8817143 4,19.5010024 L4,4.50100238 C4,3.1202905 5.11928813,2.00100238 6.5,2.00100238 L15.4720225,2.00100238 C15.6047688,1.99258291 15.7429463,2.03684187 15.8535534,2.14744899 L19.8535534,6.14744899 C19.9641605,6.25805611 20.0084195,6.39623363 20,6.52897986 Z M15,3.00100238 L6.5,3.00100238 C5.67157288,3.00100238 5,3.67257525 5,4.50100238 L5,19.5010024 C5,20.3294295 5.67157288,21.0010024 6.5,21.0010024 L17.5,21.0010024 C18.3284271,21.0010024 19,20.3294295 19,19.5010024 L19,7.00100238 L15.5,7.00100238 C15.2238576,7.00100238 15,6.77714475 15,6.50100238 L15,3.00100238 Z M16,3.70810916 L16,6.00100238 L18.2928932,6.00100238 L16,3.70810916 Z M12,10.7071068 L12,17.5 C12,17.7761424 11.7761424,18 11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,10.7071068 L8.85355339,12.8535534 C8.65829124,13.0488155 8.34170876,13.0488155 8.14644661,12.8535534 C7.95118446,12.6582912 7.95118446,12.3417088 8.14644661,12.1464466 L11.1464466,9.14644661 C11.3417088,8.95118446 11.6582912,8.95118446 11.8535534,9.14644661 L14.8535534,12.1464466 C15.0488155,12.3417088 15.0488155,12.6582912 14.8535534,12.8535534 C14.6582912,13.0488155 14.3417088,13.0488155 14.1464466,12.8535534 L12,10.7071068 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Upload Your Contract
+            </h2>
+            <p class="leading-relaxed text-base">
+              Begin by uploading your contract to LegalLens's user-friendly
+              platform. Whether it's a legal document, business agreement, or
+              any other contract, our streamlined process ensures a seamless
+              upload experience.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              AI-Powered Analysis
+            </h2>
+            <p class="leading-relaxed text-base">
+              Once uploaded, LegalLens's advanced AI takes the reins. Our
+              cutting-edge algorithms analyze every clause, expertly
+              highlighting unfair terms in bold red and potential concerns in
+              striking yellow, providing you with a clear visual assessment.
+            </p>
+          </div>
+          <div
+            class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-blue-400 text-blue-500 flex-shrink-0"
+          >
+            <svg
+              fill="#000000"
+              width="75px"
+              height="75px"
+              viewBox="0 0 64 64"
+              id="Layer_1_1_"
+              version="1.1"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M63,1H1v48h8v14h46V49h8V1z M61,3v6H3V3H61z M53,61H11V19h42V61z M55,47V17H9v30H3V11h58v36H55z"
+                  ></path>
+                  <rect height="2" width="2" x="5" y="5"></rect>
+                  <rect height="2" width="2" x="9" y="5"></rect>
+                  <rect height="2" width="2" x="13" y="5"></rect>
+                  <path d="M33,21H13v14h20V21z M31,33H15V23h16V33z"></path>
+                  <path d="M19,49h-6v10h6V49z M17,57h-2v-6h2V57z"></path>
+                  <path d="M21,59h6V41h-6V59z M23,43h2v14h-2V43z"></path>
+                  <path d="M29,59h6v-8h-6V59z M31,53h2v4h-2V53z"></path>
+                  <path d="M37,59h6V37h-6V59z M39,39h2v18h-2V39z"></path>
+                  <path d="M45,59h6V45h-6V59z M47,47h2v10h-2V47z"></path>
+                  <rect height="2" width="16" x="35" y="21"></rect>
+                  <rect height="2" width="12" x="39" y="25"></rect>
+                  <rect height="2" width="2" x="35" y="25"></rect>
+                  <rect height="2" width="16" x="35" y="29"></rect>
+                  <rect height="2" width="2" x="49" y="33"></rect>
+                  <rect height="2" width="12" x="35" y="33"></rect>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+          <div
+            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-400 text-blue-500 flex-shrink-0"
+          >
+            <svg
+              fill="#000000"
+              height="75px"
+              width="75px"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 297 297"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              enable-background="new 0 0 297 297"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="m291.34,125.044l-23.281-23.281c-3.363-3.362-8.814-3.362-12.177,0-3.362,3.362-3.362,8.815 0,12.177l8.677,8.677h-39.633c-3.976-35.54-32.276-63.816-67.815-67.795v-25.425l8.583,8.583c1.682,1.681 3.885,2.521 6.089,2.521 2.204,0 4.407-0.841 6.089-2.521 3.362-3.362 3.362-8.815 0-12.177l-23.283-23.282c-3.363-3.361-8.814-3.361-12.177-8.88178e-16l-23.282,23.281c-3.362,3.363-3.362,8.815 0,12.177 3.363,3.361 8.814,3.361 12.177,0l8.583-8.583v25.425c-35.539,3.979-63.839,32.255-67.815,67.795h-39.633l8.677-8.677c3.362-3.362 3.362-8.815 0-12.177-3.364-3.362-8.814-3.362-12.177,0l-23.282,23.282c-3.362,3.362-3.362,8.815 0,12.177l23.281,23.281c1.682,1.681 3.885,2.522 6.089,2.522s4.407-0.841 6.089-2.522c3.362-3.362 3.362-8.815 0-12.177l-8.489-8.489h47.577c4.755,0 8.61-3.855 8.61-8.61 0-32.91 26.774-59.683 59.683-59.683s59.683,26.774 59.683,59.683c0,4.755 3.855,8.61 8.61,8.61h47.577l-8.489,8.489c-3.362,3.362-3.362,8.815 0,12.177 1.682,1.681 3.885,2.522 6.089,2.522s4.407-0.841 6.089-2.522l23.281-23.281c3.362-3.362 3.362-8.815-5.68434e-14-12.177z"
+                  ></path>
+                  <path
+                    d="m189.453,130.449c0-22.578-18.368-40.946-40.946-40.946-22.578,0-40.946,18.368-40.946,40.946 0,22.578 18.368,40.946 40.946,40.946 22.578,0 40.946-18.368 40.946-40.946z"
+                  ></path>
+                  <path
+                    d="m203.451,191.238l-.068-.022-21.657-3.586c-1.844-0.567-3.813,0.409-4.476,2.227l-24.574,67.425c-1.417,3.89-6.919,3.89-8.336,0l-24.574-67.425c-0.535-1.469-1.921-2.389-3.406-2.389-0.352,0-22.727,3.743-22.727,3.743-14.929,4.974-24.903,18.813-24.903,34.463v56.103c0,8.407 6.816,15.223 15.223,15.223h129.097c8.407,0 15.223-6.816 15.223-15.223v-56.289c-0.002-15.582-10.015-29.399-24.822-34.25z"
+                  ></path>
+                  <path
+                    d="m158.563,185.791c-1.063-1.159-2.618-1.742-4.191-1.742h-11.73c-1.573,0-3.127,0.583-4.191,1.742-1.646,1.794-1.885,4.385-0.717,6.41l6.27,9.453-2.935,24.762 5.78,15.376c0.564,1.546 2.75,1.546 3.314,0l5.78-15.376-2.935-24.762 6.27-9.453c1.17-2.026 0.931-4.617-0.715-6.41z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Empowered Decision-Making
+            </h2>
+            <p class="leading-relaxed text-base">
+              With LegalLens's analysis at your fingertips, gain a deep
+              understanding of your contract's implications. Receive
+              comprehensive explanations for flagged clauses, empowering you to
+              negotiate confidently and make well-informed decisions with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-blue-600">
+            A Full Suite of Tools
+          </h2>
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Explore LegalLens's Powerful Features
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Uncover a new level of contract analysis with LegalLens's cutting-edge
+            capabilities
+          </p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+                >
+                  <svg
+                    fill="#ffffff"
+                    height="24px"
+                    width="24px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512.001 512.001"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path
+                            d="M253.468,432.168l-5.806,3.352l-33.768,19.496l-19.497-33.769l-1.373-2.376c-12.175,1.417-24.782,2.165-37.727,2.165 c-64.156,0-120.118-18.188-155.296-46.81v44.413c0,11.226,5.375,33.128,41.372,53.699c30.115,17.208,70.574,26.685,113.923,26.685 s83.809-9.477,113.923-26.685c9.503-5.429,16.852-10.951,22.552-16.345C278.02,449.824,265.13,441.84,253.468,432.168z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M194.923,330.887c-1.397-8.286-2.134-16.701-2.272-25.194c-12.06,1.388-24.542,2.124-37.355,2.124 c-64.156,0-120.118-18.188-155.296-46.81v32.78v7.87h0.001c0,11.227,5.375,33.128,41.372,53.699 c30.115,17.208,70.574,26.685,113.923,26.685c5.453,0,10.859-0.151,16.206-0.448L155.4,353.705l33.772-19.497L194.923,330.887z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M174.898,218.384l14.146-24.501c-10.917,1.153-22.193,1.756-33.748,1.756c-65.712,0-122.42-19.42-155.296-49.384v30.553 v11.633h0.001c0,11.225,5.375,33.128,41.372,53.699c30.115,17.208,70.574,26.685,113.923,26.685 c9.088,0,18.037-0.441,26.803-1.258L155.4,252.153L174.898,218.384z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M263.315,37.314c-28.533-15.693-66.896-24.336-108.019-24.336c-41.126,0-79.487,8.642-108.021,24.336 C22.786,50.782,8.741,68.096,8.741,84.81s14.046,34.028,38.534,47.496c28.533,15.693,66.896,24.336,108.021,24.336 c41.125,0,79.486-8.642,108.019-24.336c24.49-13.469,38.534-30.782,38.534-47.496S287.804,50.782,263.315,37.314z"
+                          ></path>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M489.081,302.931c0-16.482-3.117-32.25-8.787-46.746l31.708-18.305l-19.497-33.769l-31.762,18.336 c-19.756-24.599-48.343-41.819-80.909-46.788v-36.6h-38.994v36.6c-32.567,4.969-61.153,22.189-80.911,46.788l-31.762-18.336 l-19.497,33.769l31.708,18.305c-5.668,14.498-8.787,30.265-8.787,46.746c0,16.482,3.117,32.248,8.787,46.745l-31.708,18.305 l19.497,33.769l31.761-18.336c19.758,24.599,48.344,41.819,80.912,46.787v36.601h38.994v-36.601 c32.568-4.968,61.153-22.186,80.911-46.785l31.761,18.335L512,367.981l-31.706-18.305 C485.962,335.179,489.081,319.413,489.081,302.931z M360.336,355.307c-28.882,0-52.377-23.495-52.377-52.376 c0-28.882,23.495-52.377,52.377-52.377c28.88,0,52.376,23.495,52.376,52.377C412.711,331.81,389.215,355.307,360.336,355.307z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                Intelligent Contract Analysis
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                LegalLens employs cutting-edge artificial intelligence to conduct
+                meticulous contract analysis, adeptly identifying potential
+                unfair terms and clauses with unparalleled accuracy.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+                >
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <title>ic_fluent_highlight_24_regular</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="🔍-Product-Icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ic_fluent_highlight_24_regular"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <path
+                            d="M20.2585648,2.00438474 C20.6382605,2.00472706 20.9518016,2.28716326 21.0011348,2.65328337 L21.0078899,2.75506004 L21.0038407,7.25276883 C21.0009137,8.40908568 20.1270954,9.36072944 19.0029371,9.48671858 L19.0024932,11.7464847 C19.0024932,12.9373487 18.0773316,13.9121296 16.906542,13.9912939 L16.7524932,13.9964847 L16.501,13.9963847 L16.5017549,16.7881212 C16.5017549,17.6030744 16.0616895,18.349347 15.3600767,18.7462439 L15.2057929,18.8258433 L8.57108142,21.9321389 C8.10484975,22.1504232 7.57411944,21.8450614 7.50959937,21.3535767 L7.50306874,21.2528982 L7.503,13.9963847 L7.25,13.9964847 C6.05913601,13.9964847 5.08435508,13.0713231 5.00519081,11.9005335 L5,11.7464847 L5.00043957,9.4871861 C3.92882124,9.36893736 3.08392302,8.49812196 3.0058865,7.41488149 L3,7.25086975 L3,2.75438506 C3,2.3401715 3.33578644,2.00438474 3.75,2.00438474 C4.12969577,2.00438474 4.44349096,2.28653894 4.49315338,2.6526145 L4.5,2.75438506 L4.5,7.25086975 C4.5,7.63056552 4.78215388,7.94436071 5.14822944,7.99402313 L5.25,8.00086975 L18.7512697,8.00087075 C19.1315998,8.00025031 19.4461483,7.71759877 19.4967392,7.3518545 L19.5038434,7.25019537 L19.5078902,2.75371008 C19.508263,2.33949668 19.8443515,2.00401258 20.2585648,2.00438474 Z M15.001,13.9963847 L9.003,13.9963847 L9.00306874,20.0736262 L14.5697676,17.4673619 C14.8004131,17.3593763 14.9581692,17.1431606 14.9940044,16.89581 L15.0017549,16.7881212 L15.001,13.9963847 Z M17.502,9.50038474 L6.5,9.50038474 L6.5,11.7464847 C6.5,12.1261805 6.78215388,12.4399757 7.14822944,12.4896381 L7.25,12.4964847 L16.7524932,12.4964847 C17.1321889,12.4964847 17.4459841,12.2143308 17.4956465,11.8482552 L17.5024932,11.7464847 L17.502,9.50038474 Z"
+                            id="🎨-Color"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                Color-Coded Highlights
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Elevate your contract understanding with LegalLens's visually
+                intuitive color-coded highlights. Unfair terms are prominently
+                marked in bold red, while potential concerns stand out in
+                distinctive yellow, ensuring swift recognition of critical
+                aspects.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 4C23 3.11596 21.855 2.80151 21.0975 2.59348C21.0279 2.57437 20.9616 2.55615 20.8997 2.53848C19.9537 2.26818 18.6102 2 17 2C15.2762 2 13.8549 2.574 12.8789 3.13176C12.7296 3.21707 12.5726 3.33492 12.4307 3.44143C12.2433 3.58215 12.0823 3.70308 12 3.70308C11.9177 3.70308 11.7567 3.58215 11.5693 3.44143C11.4274 3.33492 11.2704 3.21707 11.1211 3.13176C10.1451 2.574 8.72378 2 7 2C5.38978 2 4.0463 2.26818 3.10028 2.53848C3.04079 2.55547 2.97705 2.57302 2.91016 2.59144C2.156 2.79911 1 3.11742 1 4V17C1 17.3466 1.17945 17.6684 1.47427 17.8507C1.94329 18.1405 2.56224 17.8868 3.11074 17.662C3.30209 17.5835 3.48487 17.5086 3.64972 17.4615C4.4537 17.2318 5.61022 17 7 17C8.2613 17 9.20554 17.4161 9.9134 17.8517C10.0952 17.9636 10.279 18.1063 10.4676 18.2527C10.9338 18.6148 11.4298 19 12 19C12.5718 19 13.0653 18.6162 13.5307 18.2543C13.7195 18.1074 13.9037 17.9642 14.0866 17.8517C14.7945 17.4161 15.7387 17 17 17C18.3898 17 19.5463 17.2318 20.3503 17.4615C20.5227 17.5108 20.7099 17.5898 20.9042 17.6719C21.4443 17.9 22.0393 18.1513 22.5257 17.8507C22.8205 17.6684 23 17.3466 23 17V4ZM3.33252 4.55749C3.13163 4.62161 3 4.81078 3 5.02166V14.8991C3 15.233 3.32089 15.4733 3.64547 15.3951C4.53577 15.1807 5.67777 15 7 15C8.76309 15 10.0794 15.5994 11 16.1721V5.45567C10.7989 5.29593 10.5037 5.08245 10.1289 4.86824C9.35493 4.426 8.27622 4 7 4C5.41509 4 4.12989 4.30297 3.33252 4.55749ZM17 15C15.2369 15 13.9206 15.5994 13 16.1721V5.45567C13.2011 5.29593 13.4963 5.08245 13.8711 4.86824C14.6451 4.426 15.7238 4 17 4C18.5849 4 19.8701 4.30297 20.6675 4.55749C20.8684 4.62161 21 4.81078 21 5.02166V14.8991C21 15.233 20.6791 15.4733 20.3545 15.3951C19.4642 15.1807 18.3222 15 17 15Z"
+                        fill="#ffffff"
+                      ></path>
+                      <path
+                        d="M2.08735 20.4087C1.86161 19.9047 2.08723 19.3131 2.59127 19.0873C3.05951 18.8792 3.54426 18.7043 4.0318 18.5478C4.84068 18.2883 5.95911 18 7 18C8.16689 18 9.16285 18.6289 9.88469 19.0847C9.92174 19.1081 9.95807 19.131 9.99366 19.1534C10.8347 19.6821 11.4004 20 12 20C12.5989 20 13.1612 19.6829 14.0012 19.1538C14.0357 19.1321 14.0708 19.1099 14.1066 19.0872C14.8291 18.6303 15.8257 18 17 18C18.0465 18 19.1647 18.2881 19.9732 18.548C20.6992 18.7814 21.2378 19.0122 21.3762 19.073C21.8822 19.2968 22.1443 19.8943 21.9118 20.4105C21.6867 20.9106 21.0859 21.1325 20.5874 20.9109C20.1883 20.7349 19.7761 20.5855 19.361 20.452C18.6142 20.2119 17.7324 20 17 20C16.4409 20 15.9037 20.3186 15.0069 20.8841C14.2635 21.3529 13.2373 22 12 22C10.7619 22 9.73236 21.3521 8.98685 20.8829C8.08824 20.3173 7.55225 20 7 20C6.27378 20 5.39222 20.2117 4.64287 20.4522C4.22538 20.5861 3.80974 20.7351 3.4085 20.9128C2.9045 21.1383 2.31305 20.9127 2.08735 20.4087Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                Comprehensive Explanations
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Foster confident decision-making with LegalLens's in-depth and
+                comprehensive explanations for each flagged clause. Unravel the
+                intricacies of your contracts as LegalLens provides contextual
+                insights, empowering you to navigate agreements with precision.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+                >
+                  <svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M20.92,15.62a1.15,1.15,0,0,0-.21-.33l-3-3a1,1,0,0,0-1.42,1.42L17.59,15H12a1,1,0,0,0,0,2h5.59l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3-3a.93.93,0,0,0,.21-.33A1,1,0,0,0,20.92,15.62ZM14,20H6a1,1,0,0,1-1-1V5A1,1,0,0,1,6,4h5V7a3,3,0,0,0,3,3h4a1,1,0,0,0,.92-.62,1,1,0,0,0-.21-1.09l-6-6h0a1.07,1.07,0,0,0-.28-.19l-.09,0L12.06,2H6A3,3,0,0,0,3,5V19a3,3,0,0,0,3,3h8a1,1,0,0,0,0-2ZM13,5.41,15.59,8H14a1,1,0,0,1-1-1Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                PDF Contract Export
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Seamlessly generate a comprehensive PDF report presenting all
+                highlighted sections and accompanied by detailed explanations,
+                enabling seamless sharing with stakeholders, legal
+                professionals, and archival purposes.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white dark:bg-gray-900">
+      <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:px-6">
+        <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+          <h2
+            class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+          >
+            Pricing Plans Tailored to Your Needs
+          </h2>
+          <p
+            class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400"
+          >
+            Choose from Feature-Rich Plans to Unlock Clarity and Empower Your
+            Decisions
+          </p>
+        </div>
+        <div
+          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+        >
+          <div
+            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Standard *</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              Ideal for individual users and small businesses seeking contract
+              transparency.
+            </p>
+            <div class="flex items-baseline justify-center my-8">
+              <span class="mr-2 text-5xl font-extrabold">$50</span>
+              <span class="text-gray-500 dark:text-gray-400">/month</span>
+            </div>
+
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Intelligent Contract Analysis</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Color Coded Highlights</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Comprehensive Explanations</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>PDF Contract Export</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Up to 10 Contracts / Month</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white text-white bg-gray-300 rounded focus:outline-none"
+              >Get started</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border-4 border-gray-100 rounded-lg shadow dark:border-gray-200 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Premium *</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              Perfect for growing businesses and teams requiring enhanced
+              contract management.
+            </p>
+            <div class="flex items-baseline justify-center my-8">
+              <span class="mr-2 text-5xl font-extrabold">$180</span>
+              <span
+                class="text-gray-500 dark:text-gray-400"
+                dark:text-gray-400=""
+                >/month</span
+              >
+            </div>
+
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>All Features of Standard Plan</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Up to 25 Contracts / Month</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Advanced Analytics & Insights</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="invis-text">p</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="invis-text">p</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white text-white bg-gray-300 rounded focus:outline-none"
+              >Get started</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Enterprise *</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              Tailored to meet the needs of large-scale organizations with
+              extensive contract volumes.
+            </p>
+            <div class="flex items-baseline justify-center my-8">
+              <span class="mr-2 text-5xl font-extrabold">Contact Us</span>
+            </div>
+
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>All Features of Standard Plan</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>All Features of Premium Plan</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>API Access and Integration</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Custom Feature Requests</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="invis-text">p</span>
+              </li>
+            </ul>
+            <a
+              class="font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white text-white bg-gray-300 rounded focus:outline-none"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <p
+          class="my-10 font-light text-gray-500 sm:text-xl dark:text-gray-400 text-center"
+        >
+          * Plans are currently unavailable while LegalLens is in Beta. Contact
+          for more details. *
+        </p>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Send Us a Message
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Have Questions or Need Assistance? We respond quickly!
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg ease-in-out duration-500"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="#" class="hover:underline">LegalLens</a>. All Rights
+          Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">How It Works</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Features</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
