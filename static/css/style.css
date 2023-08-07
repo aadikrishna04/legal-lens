@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
   --color-1: rgba(18, 24, 38, 0.95);
 }
